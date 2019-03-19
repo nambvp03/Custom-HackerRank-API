@@ -24,6 +24,10 @@ hs_err_pid*
 .settings
 .springBeans
 .sts4-cache
+.mvn
+HELP.md
+mvnw
+mvnw.cmd
 
 # Compiled class file
 *.class
