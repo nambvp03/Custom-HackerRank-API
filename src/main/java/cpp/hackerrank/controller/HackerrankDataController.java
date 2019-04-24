@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -56,6 +57,7 @@ public class HackerrankDataController {
 		return response;
 	}
 
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value=GET_ALL_TEST_CANDIDATE_URL, method=RequestMethod.GET)
 	public Map <String, Object> getAllTestCandidate(@RequestParam("test_id") String testId) {
 		Map <String, Object> response = new HashMap<String, Object>();
@@ -82,6 +84,12 @@ public class HackerrankDataController {
 				}
 			}
 			Collections.sort(allTestCandidateObject.getData(), new CandidateComparator());
+			
+			int rankCounter = 0;
+			for(Candidate c: allTestCandidateObject.getData()) {
+				c.setRank(++rankCounter);
+			}
+			
 			response.put("success", true);
 			response.put("message", allTestCandidateObject.getData());
 		}catch(Exception e) {

@@ -103,6 +103,22 @@ public class Candidate {
 	private double timeTaken;
 
 	private double finalScore;
+	
+	private int rank;
+
+	/**
+	 * @return the rank
+	 */
+	public int getRank() {
+		return rank;
+	}
+
+	/**
+	 * @param rank the rank to set
+	 */
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
 
 	/**
 	 * @return the finalScore
