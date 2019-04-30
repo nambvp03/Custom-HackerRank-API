@@ -16,6 +16,9 @@ public class URLHit {
 		HttpURLConnection conn = null;
 		StringBuffer outputJson = null;
 		String output = null;
+		
+		System.out.println("Requesting HTTP GET Url: " + getUrl);
+		
 		URL url = new URL(getUrl);
 		conn = (HttpURLConnection) url.openConnection();
 		conn.setRequestMethod("GET");

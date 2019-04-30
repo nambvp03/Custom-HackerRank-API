@@ -105,34 +105,8 @@ public class Candidate {
 	private double finalScore;
 	
 	private int rank;
-
-	/**
-	 * @return the rank
-	 */
-	public int getRank() {
-		return rank;
-	}
-
-	/**
-	 * @param rank the rank to set
-	 */
-	public void setRank(int rank) {
-		this.rank = rank;
-	}
-
-	/**
-	 * @return the finalScore
-	 */
-	public double getFinalScore() {
-		return finalScore;
-	}
-
-	/**
-	 * @param finalScore the finalScore to set
-	 */
-	public void setFinalScore(double finalScore) {
-		this.finalScore = finalScore;
-	}
+	
+	private int questionSolved;
 
 	/**
 	 * @return the id
@@ -328,5 +302,47 @@ public class Candidate {
 	 */
 	public void setTimeTaken(double timeTaken) {
 		this.timeTaken = timeTaken;
+	}
+
+	/**
+	 * @return the finalScore
+	 */
+	public double getFinalScore() {
+		return finalScore;
+	}
+
+	/**
+	 * @param finalScore the finalScore to set
+	 */
+	public void setFinalScore(double finalScore) {
+		this.finalScore = finalScore;
+	}
+
+	/**
+	 * @return the rank
+	 */
+	public int getRank() {
+		return rank;
+	}
+
+	/**
+	 * @param rank the rank to set
+	 */
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
+
+	/**
+	 * @return the questionSolved
+	 */
+	public int getQuestionSolved() {
+		return questionSolved;
+	}
+
+	/**
+	 * @param questionSolved the questionSolved to set
+	 */
+	public void setQuestionSolved(int questionSolved) {
+		this.questionSolved = questionSolved;
 	}
 }
