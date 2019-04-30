@@ -102,7 +102,11 @@ public class HackerrankDataController {
 			}
 
 			response.put("success", true);
-			response.put("message", allCandidateList);
+			if(allCandidateList.size() > 30) {
+				response.put("message", allCandidateList.subList(0, 30));
+			} else {
+				response.put("message", allCandidateList);
+			}
 		}catch(Exception e) {
 			e.printStackTrace();
 			response.put("success", false);
