@@ -101,12 +101,27 @@ public class Candidate {
 	private float percentageScore;
 
 	private double timeTaken;
+	private String timeTakenString;
 
 	private double finalScore;
 	
 	private int rank;
 	
 	private int questionSolved;
+
+	/**
+	 * @return the timeTakenString
+	 */
+	public String getTimeTakenString() {
+		return timeTakenString;
+	}
+
+	/**
+	 * @param timeTakenString the timeTakenString to set
+	 */
+	public void setTimeTakenString(String timeTakenString) {
+		this.timeTakenString = timeTakenString;
+	}
 
 	/**
 	 * @return the id
