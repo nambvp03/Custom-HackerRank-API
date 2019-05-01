@@ -83,7 +83,7 @@ public class HackerrankDataController {
 					Date startTime = formatter.parse(c.getAttemptStarttime());
 					Date endTime = formatter.parse(c.getAttemptEndtime());
 					c.setTimeTaken((endTime.getTime()-startTime.getTime())/1000.0/60.0);
-					c.setTimeTakenString(String.format("%2f", c.getTimeTaken()));
+					c.setTimeTakenString(String.format("%.2f", c.getTimeTaken()));
 					if(null != c.getQuestions() && !c.getQuestions().isEmpty()) {
 						for (Entry<String, Double> entry : c.getQuestions().entrySet()) { 
 							if(QuestionPointMap.getMapper().containsKey(entry.getKey()) && entry.getValue().equals(QuestionPointMap.getMapper().get(entry.getKey()))) {
