@@ -17,7 +17,7 @@ public class Candidate {
 	private String fullName;
 	@SerializedName("score")
 	@Expose
-	private int score;
+	private double score;
 	@SerializedName("attempt_starttime")
 	@Expose
 	private String attemptStarttime;
@@ -168,14 +168,14 @@ public class Candidate {
 	/**
 	 * @return the score
 	 */
-	public int getScore() {
+	public double getScore() {
 		return score;
 	}
 
 	/**
 	 * @param score the score to set
 	 */
-	public void setScore(int score) {
+	public void setScore(double score) {
 		this.score = score;
 	}
 
