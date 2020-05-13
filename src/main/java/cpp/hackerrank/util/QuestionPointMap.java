@@ -46,7 +46,67 @@ public class QuestionPointMap {
 		mapper.put("561215", 100.0);
 		mapper.put("132088", 75.0);
 		mapper.put("313725", 50.0);
-		mapper.put("558363", 75.0);   
+		mapper.put("558363", 75.0);
+		
+		//TestID:770762 (HSPC 2020 HS)
+    		mapper.put("816852", 100.0);
+    		mapper.put("816809", 100.0);
+		mapper.put("817118", 100.0);
+    		mapper.put("820420", 100.0);
+    		mapper.put("816810", 100.0);
+    		mapper.put("819183", 100.0);
+		mapper.put("820422", 100.0);
+		mapper.put("819238", 100.0);
+
+		//TestID:770841 (HSPC 2020 MS)
+		mapper.put("816828", 100.0);
+		mapper.put("820416", 100.0);
+		mapper.put("320807", 100.0);
+		mapper.put("816831", 100.0);
+		mapper.put("816837", 100.0);
+		mapper.put("817118", 100.0);
+		mapper.put("816820", 100.0);
+		mapper.put("816852", 100.0);
+
+		//TestID:778899   (HSPC 2020 HS China)
+		mapper.put("816852", 100.0);
+		mapper.put("816809", 100.0);
+		mapper.put("817118", 100.0);
+		mapper.put("820420", 100.0);
+		mapper.put("816810", 100.0);
+		mapper.put("819183", 100.0);
+		mapper.put("820422", 100.0);
+		mapper.put("819238", 100.0);
+
+		//TestID:778894   (HSPC 2020 MS China)
+		mapper.put("816828", 100.0);
+		mapper.put("820416", 100.0);
+		mapper.put("320807", 100.0);
+		mapper.put("816831", 100.0);
+		mapper.put("816837", 100.0);
+		mapper.put("817118", 100.0);
+		mapper.put("816820", 100.0);
+		mapper.put("816852", 100.0);
+
+		//TestID:786663   (HSPC 2020 HS International)
+		mapper.put("569349", 50.0);
+		mapper.put("222912", 75.0);
+		mapper.put("561215", 100.0);
+		mapper.put("573612", 75.0);
+		mapper.put("819238", 100.0);
+		mapper.put("161850", 75.0);
+		mapper.put("222929", 100.0);
+		mapper.put("568819", 50.0);
+
+		//TestID:784255   (HSPC 2020 MS International)
+		mapper.put("314967", 50.0);
+		mapper.put("819238", 100.0);
+		mapper.put("222912", 75.0);
+		mapper.put("569349", 50.0);
+		mapper.put("573612", 75.0);
+		mapper.put("222929", 100.0);
+		mapper.put("161850", 75.0);
+		mapper.put("568819", 50.0);
 	}
 
 	public static Map<String, Double> getMapper() {
